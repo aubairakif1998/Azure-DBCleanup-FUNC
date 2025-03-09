@@ -5,7 +5,7 @@ app.http("httpTriggerfunction", {
   authLevel: "anonymous",
   handler: async (request, context) => {
     context.log(
-      `Http function processed request for url AUBAIR AKIF"${request.url}"`
+      `Http function processed request for url AUBAIR AKIF ehsan "${request.url}"`
     );
 
     const name = request.query.get("name") || (await request.text()) || "world";
